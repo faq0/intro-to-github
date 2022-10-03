@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Step 1 Create a branch",
+      "setup": "sleep 20",
+      "run": "[ $(cat .github/script/STEP) -ge 1 ] || [ $(cat .github/script/STEP) = X ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Step 2 Commit a file",
+      "setup": "sleep 20",
+      "run": "[ $(cat .github/script/STEP) -ge 2 ] || [ $(cat .github/script/STEP) = X ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Step 3 Open a pull request",
+      "setup": "sleep 20",
+      "run": "[ $(cat .github/script/STEP) -ge 3 ] || [ $(cat .github/script/STEP) = X ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Step 4 Merge your pull request",
+      "setup": "sleep 20",
+      "run": "[ $(cat .github/script/STEP) -ge 4 ] || [ $(cat .github/script/STEP) = X ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Finish",
+      "setup": "sleep 20",
+      "run": "[ $(cat .github/script/STEP) = X ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
